@@ -7,21 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641BC865213C39B3003625B3 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641BC864213C39B3003625B3 /* Swift+Gif.swift */; };
+		641BC867213C39EE003625B3 /* strike.gif in Resources */ = {isa = PBXBuildFile; fileRef = 641BC866213C39EE003625B3 /* strike.gif */; };
+		641BC869213C9CD7003625B3 /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641BC868213C9CD7003625B3 /* MultiplayerViewController.swift */; };
+		642B5C56213CB0F800ED0BBC /* SinglePlayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B5C55213CB0F800ED0BBC /* SinglePlayerHistoryViewController.swift */; };
+		642B5C58213CB5A000ED0BBC /* MultiplayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B5C57213CB5A000ED0BBC /* MultiplayerHistoryViewController.swift */; };
 		64EE731F21343EBB002E69FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE731E21343EBB002E69FA /* AppDelegate.swift */; };
-		64EE732121343EBB002E69FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE732021343EBB002E69FA /* ViewController.swift */; };
+		64EE732121343EBB002E69FA /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE732021343EBB002E69FA /* LandingPageViewController.swift */; };
 		64EE732421343EBB002E69FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EE732221343EBB002E69FA /* Main.storyboard */; };
 		64EE732621343EBC002E69FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EE732521343EBC002E69FA /* Assets.xcassets */; };
 		64EE732921343EBC002E69FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EE732721343EBC002E69FA /* LaunchScreen.storyboard */; };
+		64EE733121343F4A002E69FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64EE733021343F4A002E69FA /* GoogleService-Info.plist */; };
+		64EE733321344361002E69FA /* playlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EE733221344361002E69FA /* playlogo.png */; };
+		64EE733921344735002E69FA /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EE733821344735002E69FA /* background.png */; };
+		64EE733F213448BB002E69FA /* invaders_bold_italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 64EE733B213448BB002E69FA /* invaders_bold_italic.otf */; };
+		64EE7340213448BB002E69FA /* invaders_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 64EE733C213448BB002E69FA /* invaders_bold.otf */; };
+		64EE7341213448BB002E69FA /* invaders_italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 64EE733D213448BB002E69FA /* invaders_italic.otf */; };
+		64EE7342213448BB002E69FA /* invaders.otf in Resources */ = {isa = PBXBuildFile; fileRef = 64EE733E213448BB002E69FA /* invaders.otf */; };
+		64EE734621344C8F002E69FA /* users.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EE734521344C8E002E69FA /* users.png */; };
+		64EE734821344CFF002E69FA /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EE734721344CFF002E69FA /* user.png */; };
+		64EE735221345373002E69FA /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE735121345373002E69FA /* SinglePlayerViewController.swift */; };
+		64EE735621374973002E69FA /* BowlingGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE735521374973002E69FA /* BowlingGameTest.swift */; };
+		64FEF4D3213BE057000EB69D /* BowlingGameTestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEF4D2213BE057000EB69D /* BowlingGameTestDelegate.swift */; };
+		64FEF4F6213C0375000EB69D /* Bowling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEF4F5213C0375000EB69D /* Bowling.swift */; };
+		64FEF4FB213C230F000EB69D /* BowlingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEF4FA213C230F000EB69D /* BowlingDelegate.swift */; };
+		BA20C81630C7F764D96F4CC8 /* Pods_PlayBowling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB9550E48AE853BD7280BED /* Pods_PlayBowling.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		641BC864213C39B3003625B3 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		641BC866213C39EE003625B3 /* strike.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = strike.gif; sourceTree = "<group>"; };
+		641BC868213C9CD7003625B3 /* MultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
+		642B5C55213CB0F800ED0BBC /* SinglePlayerHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerHistoryViewController.swift; sourceTree = "<group>"; };
+		642B5C57213CB5A000ED0BBC /* MultiplayerHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerHistoryViewController.swift; sourceTree = "<group>"; };
 		64EE731B21343EBB002E69FA /* PlayBowling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayBowling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EE731E21343EBB002E69FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64EE732021343EBB002E69FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64EE732021343EBB002E69FA /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		64EE732321343EBB002E69FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64EE732521343EBC002E69FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64EE732821343EBC002E69FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64EE732A21343EBC002E69FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64EE733021343F4A002E69FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64EE733221344361002E69FA /* playlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playlogo.png; sourceTree = "<group>"; };
+		64EE733821344735002E69FA /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		64EE733A213447D1002E69FA /* sfobliquitiesextended-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sfobliquitiesextended-bold.ttf"; sourceTree = "<group>"; };
+		64EE733B213448BB002E69FA /* invaders_bold_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = invaders_bold_italic.otf; sourceTree = "<group>"; };
+		64EE733C213448BB002E69FA /* invaders_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = invaders_bold.otf; sourceTree = "<group>"; };
+		64EE733D213448BB002E69FA /* invaders_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = invaders_italic.otf; sourceTree = "<group>"; };
+		64EE733E213448BB002E69FA /* invaders.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = invaders.otf; sourceTree = "<group>"; };
+		64EE734521344C8E002E69FA /* users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = users.png; sourceTree = "<group>"; };
+		64EE734721344CFF002E69FA /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		64EE735121345373002E69FA /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
+		64EE735521374973002E69FA /* BowlingGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGameTest.swift; sourceTree = "<group>"; };
+		64FEF4D2213BE057000EB69D /* BowlingGameTestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGameTestDelegate.swift; sourceTree = "<group>"; };
+		64FEF4F5213C0375000EB69D /* Bowling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling.swift; sourceTree = "<group>"; };
+		64FEF4FA213C230F000EB69D /* BowlingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingDelegate.swift; sourceTree = "<group>"; };
+		67B22406B9B85C6F36E13804 /* Pods-PlayBowling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayBowling.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayBowling/Pods-PlayBowling.release.xcconfig"; sourceTree = "<group>"; };
+		696C5127E85EAA8FC9A1DD79 /* Pods-PlayBowling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayBowling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayBowling/Pods-PlayBowling.debug.xcconfig"; sourceTree = "<group>"; };
+		DBB9550E48AE853BD7280BED /* Pods_PlayBowling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayBowling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +72,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA20C81630C7F764D96F4CC8 /* Pods_PlayBowling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ACD5AE3F21B5A18398ECA4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				696C5127E85EAA8FC9A1DD79 /* Pods-PlayBowling.debug.xcconfig */,
+				67B22406B9B85C6F36E13804 /* Pods-PlayBowling.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		64EE731221343EBB002E69FA = {
 			isa = PBXGroup;
 			children = (
 				64EE731D21343EBB002E69FA /* PlayBowling */,
 				64EE731C21343EBB002E69FA /* Products */,
+				2ACD5AE3F21B5A18398ECA4D /* Pods */,
+				AD8DB3DADC51F58196C98194 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +109,98 @@
 		64EE731D21343EBB002E69FA /* PlayBowling */ = {
 			isa = PBXGroup;
 			children = (
-				64EE731E21343EBB002E69FA /* AppDelegate.swift */,
-				64EE732021343EBB002E69FA /* ViewController.swift */,
-				64EE732221343EBB002E69FA /* Main.storyboard */,
-				64EE732521343EBC002E69FA /* Assets.xcassets */,
-				64EE732721343EBC002E69FA /* LaunchScreen.storyboard */,
-				64EE732A21343EBC002E69FA /* Info.plist */,
+				64FEF4F9213C22D7000EB69D /* Redundant Classes */,
+				64EE734E21345003002E69FA /* Classes */,
+				64EE734D21344DF5002E69FA /* ViewControllers */,
+				64EE734C21344DD4002E69FA /* Core Files */,
+				64EE734921344DA7002E69FA /* Resources */,
 			);
 			path = PlayBowling;
+			sourceTree = "<group>";
+		};
+		64EE734921344DA7002E69FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64EE734B21344DBE002E69FA /* Images */,
+				64EE734A21344DB5002E69FA /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		64EE734A21344DB5002E69FA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				64EE733A213447D1002E69FA /* sfobliquitiesextended-bold.ttf */,
+				64EE733B213448BB002E69FA /* invaders_bold_italic.otf */,
+				64EE733C213448BB002E69FA /* invaders_bold.otf */,
+				64EE733D213448BB002E69FA /* invaders_italic.otf */,
+				64EE733E213448BB002E69FA /* invaders.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		64EE734B21344DBE002E69FA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				641BC866213C39EE003625B3 /* strike.gif */,
+				64EE733821344735002E69FA /* background.png */,
+				64EE733221344361002E69FA /* playlogo.png */,
+				64EE734721344CFF002E69FA /* user.png */,
+				64EE734521344C8E002E69FA /* users.png */,
+				64EE732521343EBC002E69FA /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		64EE734C21344DD4002E69FA /* Core Files */ = {
+			isa = PBXGroup;
+			children = (
+				641BC864213C39B3003625B3 /* Swift+Gif.swift */,
+				64EE731E21343EBB002E69FA /* AppDelegate.swift */,
+				64EE732A21343EBC002E69FA /* Info.plist */,
+				64EE733021343F4A002E69FA /* GoogleService-Info.plist */,
+			);
+			path = "Core Files";
+			sourceTree = "<group>";
+		};
+		64EE734D21344DF5002E69FA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				64EE735121345373002E69FA /* SinglePlayerViewController.swift */,
+				64EE732221343EBB002E69FA /* Main.storyboard */,
+				64EE732721343EBC002E69FA /* LaunchScreen.storyboard */,
+				64EE732021343EBB002E69FA /* LandingPageViewController.swift */,
+				641BC868213C9CD7003625B3 /* MultiplayerViewController.swift */,
+				642B5C55213CB0F800ED0BBC /* SinglePlayerHistoryViewController.swift */,
+				642B5C57213CB5A000ED0BBC /* MultiplayerHistoryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		64EE734E21345003002E69FA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				64FEF4F5213C0375000EB69D /* Bowling.swift */,
+				64FEF4FA213C230F000EB69D /* BowlingDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		64FEF4F9213C22D7000EB69D /* Redundant Classes */ = {
+			isa = PBXGroup;
+			children = (
+				64FEF4D2213BE057000EB69D /* BowlingGameTestDelegate.swift */,
+				64EE735521374973002E69FA /* BowlingGameTest.swift */,
+			);
+			path = "Redundant Classes";
+			sourceTree = "<group>";
+		};
+		AD8DB3DADC51F58196C98194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9550E48AE853BD7280BED /* Pods_PlayBowling.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64EE732D21343EBC002E69FA /* Build configuration list for PBXNativeTarget "PlayBowling" */;
 			buildPhases = (
+				5D1DFFAD79FEDCAEF8CB91E6 /* [CP] Check Pods Manifest.lock */,
 				64EE731721343EBB002E69FA /* Sources */,
 				64EE731821343EBB002E69FA /* Frameworks */,
 				64EE731921343EBB002E69FA /* Resources */,
+				3169F180DCF458E9BA0F6BBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +264,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EE732921343EBC002E69FA /* LaunchScreen.storyboard in Resources */,
+				64EE733921344735002E69FA /* background.png in Resources */,
+				64EE734821344CFF002E69FA /* user.png in Resources */,
+				64EE7341213448BB002E69FA /* invaders_italic.otf in Resources */,
+				64EE733321344361002E69FA /* playlogo.png in Resources */,
+				64EE733F213448BB002E69FA /* invaders_bold_italic.otf in Resources */,
+				641BC867213C39EE003625B3 /* strike.gif in Resources */,
+				64EE734621344C8F002E69FA /* users.png in Resources */,
+				64EE7340213448BB002E69FA /* invaders_bold.otf in Resources */,
+				64EE733121343F4A002E69FA /* GoogleService-Info.plist in Resources */,
+				64EE7342213448BB002E69FA /* invaders.otf in Resources */,
 				64EE732621343EBC002E69FA /* Assets.xcassets in Resources */,
 				64EE732421343EBB002E69FA /* Main.storyboard in Resources */,
 			);
@@ -130,13 +281,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3169F180DCF458E9BA0F6BBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlayBowling/Pods-PlayBowling-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayBowling/Pods-PlayBowling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D1DFFAD79FEDCAEF8CB91E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayBowling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64EE731721343EBB002E69FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64EE732121343EBB002E69FA /* ViewController.swift in Sources */,
+				641BC865213C39B3003625B3 /* Swift+Gif.swift in Sources */,
+				64FEF4FB213C230F000EB69D /* BowlingDelegate.swift in Sources */,
+				642B5C56213CB0F800ED0BBC /* SinglePlayerHistoryViewController.swift in Sources */,
+				64FEF4F6213C0375000EB69D /* Bowling.swift in Sources */,
+				64EE735621374973002E69FA /* BowlingGameTest.swift in Sources */,
+				64EE732121343EBB002E69FA /* LandingPageViewController.swift in Sources */,
+				64EE735221345373002E69FA /* SinglePlayerViewController.swift in Sources */,
 				64EE731F21343EBB002E69FA /* AppDelegate.swift in Sources */,
+				641BC869213C9CD7003625B3 /* MultiplayerViewController.swift in Sources */,
+				64FEF4D3213BE057000EB69D /* BowlingGameTestDelegate.swift in Sources */,
+				642B5C58213CB5A000ED0BBC /* MultiplayerHistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,16 +493,17 @@
 		};
 		64EE732E21343EBC002E69FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696C5127E85EAA8FC9A1DD79 /* Pods-PlayBowling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J433UJ28X4;
-				INFOPLIST_FILE = PlayBowling/Info.plist;
+				INFOPLIST_FILE = "PlayBowling/Core Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fariszaman.PlayBowling;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fariszaman.playBowl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,16 +512,17 @@
 		};
 		64EE732F21343EBC002E69FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B22406B9B85C6F36E13804 /* Pods-PlayBowling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J433UJ28X4;
-				INFOPLIST_FILE = PlayBowling/Info.plist;
+				INFOPLIST_FILE = "PlayBowling/Core Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fariszaman.PlayBowling;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fariszaman.playBowl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
