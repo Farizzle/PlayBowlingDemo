@@ -121,10 +121,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="qEj-6N-96t"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="singlePlayer" destination="pCn-vb-wCh" id="fSw-Uq-vvt"/>
-                        <outlet property="twoPlayer" destination="m9V-vs-kNk" id="k6f-vV-jyY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="qHv-Y3-dbu">
