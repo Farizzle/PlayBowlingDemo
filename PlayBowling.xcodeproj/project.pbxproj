@@ -10,11 +10,11 @@
 		641BC865213C39B3003625B3 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641BC864213C39B3003625B3 /* Swift+Gif.swift */; };
 		641BC867213C39EE003625B3 /* strike.gif in Resources */ = {isa = PBXBuildFile; fileRef = 641BC866213C39EE003625B3 /* strike.gif */; };
 		641BC869213C9CD7003625B3 /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641BC868213C9CD7003625B3 /* MultiplayerViewController.swift */; };
+		641C09852141E2DB0068A102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641C09842141E2DB0068A102 /* Main.storyboard */; };
 		642B5C56213CB0F800ED0BBC /* SinglePlayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B5C55213CB0F800ED0BBC /* SinglePlayerHistoryViewController.swift */; };
 		642B5C58213CB5A000ED0BBC /* MultiplayerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B5C57213CB5A000ED0BBC /* MultiplayerHistoryViewController.swift */; };
 		64EE731F21343EBB002E69FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE731E21343EBB002E69FA /* AppDelegate.swift */; };
 		64EE732121343EBB002E69FA /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE732021343EBB002E69FA /* LandingPageViewController.swift */; };
-		64EE732421343EBB002E69FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EE732221343EBB002E69FA /* Main.storyboard */; };
 		64EE732621343EBC002E69FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EE732521343EBC002E69FA /* Assets.xcassets */; };
 		64EE732921343EBC002E69FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EE732721343EBC002E69FA /* LaunchScreen.storyboard */; };
 		64EE733121343F4A002E69FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64EE733021343F4A002E69FA /* GoogleService-Info.plist */; };
@@ -38,12 +38,12 @@
 		641BC864213C39B3003625B3 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 		641BC866213C39EE003625B3 /* strike.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = strike.gif; sourceTree = "<group>"; };
 		641BC868213C9CD7003625B3 /* MultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
+		641C09842141E2DB0068A102 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		642B5C55213CB0F800ED0BBC /* SinglePlayerHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerHistoryViewController.swift; sourceTree = "<group>"; };
 		642B5C57213CB5A000ED0BBC /* MultiplayerHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerHistoryViewController.swift; sourceTree = "<group>"; };
 		64EE731B21343EBB002E69FA /* PlayBowling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayBowling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EE731E21343EBB002E69FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64EE732021343EBB002E69FA /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
-		64EE732321343EBB002E69FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64EE732521343EBC002E69FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64EE732821343EBC002E69FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64EE732A21343EBC002E69FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				64EE735121345373002E69FA /* SinglePlayerViewController.swift */,
-				64EE732221343EBB002E69FA /* Main.storyboard */,
+				641C09842141E2DB0068A102 /* Main.storyboard */,
 				64EE732721343EBC002E69FA /* LaunchScreen.storyboard */,
 				64EE732021343EBB002E69FA /* LandingPageViewController.swift */,
 				641BC868213C9CD7003625B3 /* MultiplayerViewController.swift */,
@@ -270,12 +270,12 @@
 				64EE733321344361002E69FA /* playlogo.png in Resources */,
 				64EE733F213448BB002E69FA /* invaders_bold_italic.otf in Resources */,
 				641BC867213C39EE003625B3 /* strike.gif in Resources */,
+				641C09852141E2DB0068A102 /* Main.storyboard in Resources */,
 				64EE734621344C8F002E69FA /* users.png in Resources */,
 				64EE7340213448BB002E69FA /* invaders_bold.otf in Resources */,
 				64EE733121343F4A002E69FA /* GoogleService-Info.plist in Resources */,
 				64EE7342213448BB002E69FA /* invaders.otf in Resources */,
 				64EE732621343EBC002E69FA /* Assets.xcassets in Resources */,
-				64EE732421343EBB002E69FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,14 +358,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		64EE732221343EBB002E69FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64EE732321343EBB002E69FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		64EE732721343EBC002E69FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

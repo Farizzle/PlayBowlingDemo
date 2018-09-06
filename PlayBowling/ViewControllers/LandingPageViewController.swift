@@ -10,12 +10,6 @@ import UIKit
 
 class LandingPageViewController: UIViewController {
     
-    @IBOutlet var singlePlayer: UIImageView!
-    @IBOutlet var twoPlayer: UIImageView!
-    
-    var onePlayerStart = UITapGestureRecognizer()
-    var twoPlayerStart = UITapGestureRecognizer()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -65,11 +65,9 @@ class SinglePlayerViewController: UIViewController, BowlingDelegate  {
         }
     }
     
-    func rollTwoComplete(_ sender: Bowling, includeSecondThrow: Bool) {
-        if (includeSecondThrow){
-            rollString.append("Roll 2: \(game.throw2)\n")
-            rollsLabel.text = rollString
-        }
+    func rollTwoComplete(_ sender: Bowling) {
+        rollString.append("Roll 2: \(game.throw2)\n")
+        rollsLabel.text = rollString
     }
     
     func gameFinished(_ sender: Bowling) {

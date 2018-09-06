@@ -14,18 +14,16 @@ class Bowling: NSObject, BowlingDelegate {
     var frameIndex = Int()
     var throw1 = Int()
     var throw2 = Int()
-    var includeThrow = Bool()
     var gameOver = Bool()
     
     var delegate : BowlingDelegate?
-
+    
     override init() {
         super.init()
         rolls = []
         frameIndex = 0
         throw1 = 0
         throw2 = 0
-        includeThrow = true
         delegate = self
         gameOver = false
     }
@@ -42,15 +40,11 @@ class Bowling: NSObject, BowlingDelegate {
             } else {
                 throw2 = Int.random(in: 0...10-throw1)
                 makeRoll(throw2)
-                includeThrow = true
-                if (frameIndex >= 10 && !(isStrike(rollIndex: 19))){
-                    includeThrow = false
-                }
-                delegate?.rollTwoComplete(self, includeSecondThrow: includeThrow)
+                delegate?.rollTwoComplete(self)
                 if (throw1 + throw2 == 10){
                     delegate?.wasSpare(self)
                     delegate?.didFinishFrame(self)
-                    frameIndex += 1                    
+                    frameIndex += 1
                 } else {
                     delegate?.didFinishFrame(self)
                     if(frameIndex > 10){
@@ -74,7 +68,8 @@ class Bowling: NSObject, BowlingDelegate {
     }
     
     func score(frameIndex: Int)-> Int{
-        var result = 0
+        var result : Int
+        result = 0
         var rollIndex = 0
         if (frameIndex < 11){
             for currentFrame in 0..<frameIndex{
@@ -102,11 +97,26 @@ class Bowling: NSObject, BowlingDelegate {
     }
     
     private func spareScore(rollIndex: Int) -> Int{
-        return 10 + rolls[rollIndex + 2]
+        let validIndex2 = rolls.indices.contains(rollIndex+2)
+        var additionalSpareScore = 0
+        if (validIndex2){
+            additionalSpareScore = 10 + rolls[rollIndex + 2]
+        }
+        return additionalSpareScore
     }
     
     private func strikeScore(rollIndex: Int) -> Int{
-        return 10 + rolls[rollIndex + 1] + rolls[rollIndex + 2]
+        let validIndex1 = rolls.indices.contains(rollIndex+1)
+        let validIndex2 = rolls.indices.contains(rollIndex+2)
+        var additionalStrikeScore = 0
+        if (validIndex1 && validIndex2){
+            additionalStrikeScore = 10 + rolls[rollIndex + 1] + rolls[rollIndex + 2]
+        } else if (validIndex1){
+            additionalStrikeScore = 10 + rolls[rollIndex + 1]
+        } else if (validIndex2){
+            additionalStrikeScore = 10 + rolls[rollIndex + 2]
+        }
+        return additionalStrikeScore
     }
     
     private func frameScore(rollIndex: Int) -> Int{
@@ -137,12 +147,12 @@ class Bowling: NSObject, BowlingDelegate {
         return
     }
     
-    func rollTwoComplete(_ sender: Bowling, includeSecondThrow: Bool) {
+    func rollTwoComplete(_ sender: Bowling) {
         return
     }
     
     func gameFinished(_ sender: Bowling) {
         return
     }
-
+    
 }
