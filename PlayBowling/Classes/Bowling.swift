@@ -14,7 +14,6 @@ class Bowling: NSObject, BowlingDelegate {
     var frameIndex = Int()
     var throw1 = Int()
     var throw2 = Int()
-    var includeThrow = Bool()
     var gameOver = Bool()
     
     var delegate : BowlingDelegate?
@@ -25,7 +24,6 @@ class Bowling: NSObject, BowlingDelegate {
         frameIndex = 0
         throw1 = 0
         throw2 = 0
-        includeThrow = true
         delegate = self
         gameOver = false
     }
@@ -42,11 +40,7 @@ class Bowling: NSObject, BowlingDelegate {
             } else {
                 throw2 = Int.random(in: 0...10-throw1)
                 makeRoll(throw2)
-                includeThrow = true
-                if (frameIndex >= 10 && !(isStrike(rollIndex: 19))){
-                    includeThrow = false
-                }
-                delegate?.rollTwoComplete(self, includeSecondThrow: includeThrow)
+                delegate?.rollTwoComplete(self)
                 if (throw1 + throw2 == 10){
                     delegate?.wasSpare(self)
                     delegate?.didFinishFrame(self)
@@ -137,7 +131,7 @@ class Bowling: NSObject, BowlingDelegate {
         return
     }
     
-    func rollTwoComplete(_ sender: Bowling, includeSecondThrow: Bool) {
+    func rollTwoComplete(_ sender: Bowling) {
         return
     }
     

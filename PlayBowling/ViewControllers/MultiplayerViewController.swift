@@ -90,17 +90,13 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
         }
     }
     
-    func rollTwoComplete(_ sender: Bowling, includeSecondThrow: Bool) {
+    func rollTwoComplete(_ sender: Bowling) {
         if (playerTurn == 1){
-            if (includeSecondThrow){
-                rollString.append("Player 1 - Roll 2: \(game.throw2)\n")
-                rollsLabel.text = rollString
-            }
+            rollString.append("Player 1 - Roll 2: \(game.throw2)\n")
+            rollsLabel.text = rollString
         } else if (playerTurn == 2){
-            if (includeSecondThrow){
-                rollString.append("Player 2 - Roll 2: \(game2.throw2)\n")
-                rollsLabel.text = rollString
-            }
+            rollString.append("Player 2 - Roll 2: \(game2.throw2)\n")
+            rollsLabel.text = rollString
         }
     }
     
