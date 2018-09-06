@@ -15,7 +15,9 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
     var game2 = Bowling()
     var delegate : BowlingDelegate?
     var rollString = String()
+    var rollString2 = String()
     @IBOutlet weak var rollsLabel: UILabel!
+    @IBOutlet weak var rollsLabel2: UILabel!
     var frameStrings = String()
     @IBOutlet weak var frameScoreLabel: UILabel!
     @IBOutlet weak var strikeImage: UIImageView!
@@ -28,6 +30,8 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
         game2.delegate = self
         rollsLabel.sizeToFit()
         rollsLabel.numberOfLines = 0
+        rollsLabel2.sizeToFit()
+        rollsLabel2.numberOfLines = 0
         frameScoreLabel.sizeToFit()
         frameScoreLabel.numberOfLines = 0
         strikeImage.loadGif(name: "strike")
@@ -55,8 +59,8 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
             frameStrings.append("Player 1 - Frame \(game.frameIndex) score : \(game.score(frameIndex: game.frameIndex))\n")
             frameScoreLabel.text = frameStrings
         } else if (playerTurn == 2){
-            rollString.append("--------\n")
-            rollsLabel.text = rollString
+            rollString2.append("--------\n")
+            rollsLabel2.text = rollString
             frameStrings.append("Player 2 - Frame \(game.frameIndex) score : \(game2.score(frameIndex: game2.frameIndex))\n")
             frameScoreLabel.text = frameStrings
         }
@@ -82,8 +86,8 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
                 strikeImage.isHidden = true
             }
         } else if (playerTurn == 2){
-            rollString.append("Player 2 - Roll 1: \(game2.throw1)\n")
-            rollsLabel.text = rollString
+            rollString2.append("Player 2 - Roll 1: \(game2.throw1)\n")
+            rollsLabel2.text = rollString
             if (game2.throw1 != 10){
                 strikeImage.isHidden = true
             }
@@ -95,8 +99,8 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
             rollString.append("Player 1 - Roll 2: \(game.throw2)\n")
             rollsLabel.text = rollString
         } else if (playerTurn == 2){
-            rollString.append("Player 2 - Roll 2: \(game2.throw2)\n")
-            rollsLabel.text = rollString
+            rollString2.append("Player 2 - Roll 2: \(game2.throw2)\n")
+            rollsLabel2.text = rollString
         }
     }
     
