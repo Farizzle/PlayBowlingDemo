@@ -60,7 +60,7 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
             frameScoreLabel.text = frameStrings
         } else if (playerTurn == 2){
             rollString2.append("--------\n")
-            rollsLabel2.text = rollString
+            rollsLabel2.text = rollString2
             frameStrings.append("Player 2 - Frame \(game.frameIndex) score : \(game2.score(frameIndex: game2.frameIndex))\n")
             frameScoreLabel.text = frameStrings
         }
@@ -87,7 +87,7 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
             }
         } else if (playerTurn == 2){
             rollString2.append("Player 2 - Roll 1: \(game2.throw1)\n")
-            rollsLabel2.text = rollString
+            rollsLabel2.text = rollString2
             if (game2.throw1 != 10){
                 strikeImage.isHidden = true
             }
@@ -100,7 +100,7 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
             rollsLabel.text = rollString
         } else if (playerTurn == 2){
             rollString2.append("Player 2 - Roll 2: \(game2.throw2)\n")
-            rollsLabel2.text = rollString
+            rollsLabel2.text = rollString2
         }
     }
     
