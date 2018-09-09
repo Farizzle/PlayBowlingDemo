@@ -43,6 +43,7 @@ class Bowling: NSObject, BowlingDelegate {
         }
     }
     
+    
     func score(frameIndex: Int)-> Int{
         var result : Int
         result = 0
@@ -161,19 +162,11 @@ class Bowling: NSObject, BowlingDelegate {
         return
     }
     
-    func updatePreviousFrame(_ sender: Bowling) {
-        return
-    }
-    
     func wasStrike(_ sender: Bowling) {
         return
     }
     
     func wasSpare(_ sender: Bowling) {
-        return
-    }
-    
-    func wasGutter(_ sender: Bowling) {
         return
     }
     

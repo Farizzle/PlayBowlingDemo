@@ -12,7 +12,6 @@ protocol BowlingDelegate {
     func didFinishFrame(_ sender: Bowling)
     func wasStrike(_ sender: Bowling)
     func wasSpare(_ sender: Bowling)
-    func wasGutter(_ sender: Bowling)
     func rollOneComplete(_ sender:Bowling)
     func rollTwoComplete(_ sender:Bowling)
     func gameFinished(_ sender: Bowling)

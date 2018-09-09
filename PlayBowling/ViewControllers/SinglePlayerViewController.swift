@@ -53,10 +53,6 @@ class SinglePlayerViewController: UIViewController, BowlingDelegate  {
         print("SPARE")
     }
     
-    func wasGutter(_ sender: Bowling) {
-        return
-    }
-    
     func rollOneComplete(_ sender: Bowling) {
         rollString.append("Roll 1: \(game.throw1)\n")
         rollsLabel.text = rollString

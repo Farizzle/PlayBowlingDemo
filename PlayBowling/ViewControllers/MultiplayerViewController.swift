@@ -74,10 +74,6 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
         print("SPARE")
     }
     
-    func wasGutter(_ sender: Bowling) {
-        return
-    }
-    
     func rollOneComplete(_ sender: Bowling) {
         if (playerTurn == 1){
             rollString.append("Player 1 - Roll 1: \(game.throw1)\n")
