@@ -78,7 +78,7 @@ class SinglePlayerViewController: UIViewController, BowlingDelegate  {
         addScoreToFireBase()
     }
     
-    func addScoreToFireBase(){
+    private func addScoreToFireBase(){
         db.collection("SinglePlayer").document("\(Date())").setData(["Player 1 Score" : "\(game.score(frameIndex: game.frameIndex-1))"]) { (error:Error?) in
             if let error = error {
                 print("\(error.localizedDescription)")

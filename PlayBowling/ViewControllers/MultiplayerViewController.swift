@@ -116,7 +116,7 @@ class MultiPlayerViewController: UIViewController, BowlingDelegate  {
         addScoreToFireBase()
     }
     
-    func addScoreToFireBase(){
+    private func addScoreToFireBase(){
         db.collection("MultiPlayer").document("\(Date())").setData([
             "Player 1 Score" : "\(game.score(frameIndex: game.frameIndex-1))",
             "Player 2 Score" : "\(game2.score(frameIndex: game2.frameIndex-1))"
