@@ -32,63 +32,15 @@ class Bowling: NSObject, BowlingDelegate {
     
     func rollBall(){
         if (frameIndex < 10 && !gameOver){
-            throw1 = Int.random(in: 9...10)
-            makeRoll(throw1)
-            delegate?.rollOneComplete(self)
-            if (throw1 == 10) {
-                delegate?.wasStrike(self)
-                delegate?.didFinishFrame(self)
-                frameIndex += 1
-            } else {
-                throw2 = Int.random(in: 0...10-throw1)
-                makeRoll(throw2)
-                delegate?.rollTwoComplete(self)
-                if (throw1 + throw2 == 10){
-                    delegate?.wasSpare(self)
-                    delegate?.didFinishFrame(self)
-                    frameIndex += 1
-                } else {
-                    delegate?.didFinishFrame(self)
-                    frameIndex += 1
-                }
-            }
+            handleStandardFrames()
         } else if (frameIndex == 10  && frameTenThrows < 3) {
-            throw1 = Int.random(in: 9...10)
-            makeRoll(throw1)
-            delegate?.rollOneComplete(self)
-            frameTenThrows += 1
-            if (frameTenThrows == 3){
-                delegate?.didFinishFrame(self)
-                frameIndex += 1
-                gameOver = true
-                return
-            }
-            if (throw1 == 10){
-                delegate?.wasStrike(self)
-                return
-            } else {
-                throw2 = Int.random(in: 0...10-throw1)
-                makeRoll(throw2)
-                delegate?.rollTwoComplete(self)
-                if (throw1 + throw2 == 10){
-                    delegate?.wasSpare(self)
-                    frameTenThrows += 1
-                    return
-                } else {
-                    delegate?.didFinishFrame(self)
-                    frameIndex += 1
-                    gameOver = true
-                }
-            }
+            handleTenthFrame()
         } else {
             if (gameOver){
-                delegate?.gameFinished(self)
+            delegate?.gameFinished(self)
+            gameOver = false
             }
         }
-    }
-    
-    func makeRoll(_ pins: Int){
-        rolls.append(pins)
     }
     
     func score(frameIndex: Int)-> Int{
@@ -112,7 +64,69 @@ class Bowling: NSObject, BowlingDelegate {
         return result
     }
     
-    func isSpare(rollIndex: Int) -> Bool{
+    private func makeRoll(_ pins: Int){
+        rolls.append(pins)
+    }
+    
+    private func handleStandardFrames(){
+        throw1 = Int.random(in: 9...10)
+        makeRoll(throw1)
+        delegate?.rollOneComplete(self)
+        if (throw1 == 10) {
+            delegate?.wasStrike(self)
+            delegate?.didFinishFrame(self)
+            frameIndex += 1
+        } else {
+            throw2 = Int.random(in: 0...10-throw1)
+            makeRoll(throw2)
+            delegate?.rollTwoComplete(self)
+            if (throw1 + throw2 == 10){
+                delegate?.wasSpare(self)
+                delegate?.didFinishFrame(self)
+                frameIndex += 1
+            } else {
+                delegate?.didFinishFrame(self)
+                frameIndex += 1
+            }
+        }
+    }
+    
+    private func handleTenthFrame(){
+        throw1 = Int.random(in: 9...10)
+        makeRoll(throw1)
+        delegate?.rollOneComplete(self)
+        frameTenThrows += 1
+        if (frameTenThrows == 3){
+            delegate?.didFinishFrame(self)
+            frameIndex += 1
+            gameOver = true
+            return
+        }
+        if (throw1 == 10){
+            delegate?.wasStrike(self)
+            return
+        } else {
+            throw2 = Int.random(in: 0...10-throw1)
+            makeRoll(throw2)
+            delegate?.rollTwoComplete(self)
+            if (throw1 + throw2 == 10){
+                delegate?.wasSpare(self)
+                frameTenThrows += 1
+                if (frameTenThrows == 3){
+                    delegate?.didFinishFrame(self)
+                    frameIndex += 1
+                    gameOver = true
+                }
+                return
+            } else {
+                delegate?.didFinishFrame(self)
+                frameIndex += 1
+                gameOver = true
+            }
+        }
+    }
+    
+    private func isSpare(rollIndex: Int) -> Bool{
         return rolls[rollIndex] + rolls[rollIndex + 1] == 10
     }
     
