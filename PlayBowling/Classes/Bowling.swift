@@ -15,22 +15,24 @@ class Bowling: NSObject, BowlingDelegate {
     var throw1 = Int()
     var throw2 = Int()
     var gameOver = Bool()
+    var frameTenThrows = Int()
     
     var delegate : BowlingDelegate?
     
     override init() {
         super.init()
         rolls = []
-        frameIndex = 0
+        frameIndex = 1
         throw1 = 0
         throw2 = 0
+        frameTenThrows = 0
         delegate = self
         gameOver = false
     }
     
     func rollBall(){
-        if (frameIndex <= 10 && !gameOver){
-            throw1 = Int.random(in: 0...10)
+        if (frameIndex < 10 && !gameOver){
+            throw1 = Int.random(in: 9...10)
             makeRoll(throw1)
             delegate?.rollOneComplete(self)
             if (throw1 == 10) {
@@ -47,18 +49,40 @@ class Bowling: NSObject, BowlingDelegate {
                     frameIndex += 1
                 } else {
                     delegate?.didFinishFrame(self)
-                    if(frameIndex > 10){
-                        delegate?.gameFinished(self)
-                        gameOver = true
-                        return
-                    }
                     frameIndex += 1
                 }
             }
-        } else {
-            if (!gameOver){
-                delegate?.gameFinished(self)
+        } else if (frameIndex == 10  && frameTenThrows < 3) {
+            throw1 = Int.random(in: 9...10)
+            makeRoll(throw1)
+            delegate?.rollOneComplete(self)
+            frameTenThrows += 1
+            if (frameTenThrows == 3){
+                delegate?.didFinishFrame(self)
+                frameIndex += 1
                 gameOver = true
+                return
+            }
+            if (throw1 == 10){
+                delegate?.wasStrike(self)
+                return
+            } else {
+                throw2 = Int.random(in: 0...10-throw1)
+                makeRoll(throw2)
+                delegate?.rollTwoComplete(self)
+                if (throw1 + throw2 == 10){
+                    delegate?.wasSpare(self)
+                    frameTenThrows += 1
+                    return
+                } else {
+                    delegate?.didFinishFrame(self)
+                    frameIndex += 1
+                    gameOver = true
+                }
+            }
+        } else {
+            if (gameOver){
+                delegate?.gameFinished(self)
             }
         }
     }
@@ -111,10 +135,6 @@ class Bowling: NSObject, BowlingDelegate {
         var additionalStrikeScore = 0
         if (validIndex1 && validIndex2){
             additionalStrikeScore = 10 + rolls[rollIndex + 1] + rolls[rollIndex + 2]
-        } else if (validIndex1){
-            additionalStrikeScore = 10 + rolls[rollIndex + 1]
-        } else if (validIndex2){
-            additionalStrikeScore = 10 + rolls[rollIndex + 2]
         }
         return additionalStrikeScore
     }
