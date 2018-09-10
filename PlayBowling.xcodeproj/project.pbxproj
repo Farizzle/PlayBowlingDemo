@@ -27,8 +27,6 @@
 		64EE734621344C8F002E69FA /* users.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EE734521344C8E002E69FA /* users.png */; };
 		64EE734821344CFF002E69FA /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 64EE734721344CFF002E69FA /* user.png */; };
 		64EE735221345373002E69FA /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE735121345373002E69FA /* SinglePlayerViewController.swift */; };
-		64EE735621374973002E69FA /* BowlingGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EE735521374973002E69FA /* BowlingGameTest.swift */; };
-		64FEF4D3213BE057000EB69D /* BowlingGameTestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEF4D2213BE057000EB69D /* BowlingGameTestDelegate.swift */; };
 		64FEF4F6213C0375000EB69D /* Bowling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEF4F5213C0375000EB69D /* Bowling.swift */; };
 		64FEF4FB213C230F000EB69D /* BowlingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEF4FA213C230F000EB69D /* BowlingDelegate.swift */; };
 		BA20C81630C7F764D96F4CC8 /* Pods_PlayBowling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB9550E48AE853BD7280BED /* Pods_PlayBowling.framework */; };
@@ -58,8 +56,6 @@
 		64EE734521344C8E002E69FA /* users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = users.png; sourceTree = "<group>"; };
 		64EE734721344CFF002E69FA /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		64EE735121345373002E69FA /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
-		64EE735521374973002E69FA /* BowlingGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGameTest.swift; sourceTree = "<group>"; };
-		64FEF4D2213BE057000EB69D /* BowlingGameTestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGameTestDelegate.swift; sourceTree = "<group>"; };
 		64FEF4F5213C0375000EB69D /* Bowling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling.swift; sourceTree = "<group>"; };
 		64FEF4FA213C230F000EB69D /* BowlingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingDelegate.swift; sourceTree = "<group>"; };
 		67B22406B9B85C6F36E13804 /* Pods-PlayBowling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayBowling.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayBowling/Pods-PlayBowling.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,7 +105,6 @@
 		64EE731D21343EBB002E69FA /* PlayBowling */ = {
 			isa = PBXGroup;
 			children = (
-				64FEF4F9213C22D7000EB69D /* Redundant Classes */,
 				64EE734E21345003002E69FA /* Classes */,
 				64EE734D21344DF5002E69FA /* ViewControllers */,
 				64EE734C21344DD4002E69FA /* Core Files */,
@@ -184,15 +179,6 @@
 				64FEF4FA213C230F000EB69D /* BowlingDelegate.swift */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		64FEF4F9213C22D7000EB69D /* Redundant Classes */ = {
-			isa = PBXGroup;
-			children = (
-				64FEF4D2213BE057000EB69D /* BowlingGameTestDelegate.swift */,
-				64EE735521374973002E69FA /* BowlingGameTest.swift */,
-			);
-			path = "Redundant Classes";
 			sourceTree = "<group>";
 		};
 		AD8DB3DADC51F58196C98194 /* Frameworks */ = {
@@ -345,12 +331,10 @@
 				64FEF4FB213C230F000EB69D /* BowlingDelegate.swift in Sources */,
 				642B5C56213CB0F800ED0BBC /* SinglePlayerHistoryViewController.swift in Sources */,
 				64FEF4F6213C0375000EB69D /* Bowling.swift in Sources */,
-				64EE735621374973002E69FA /* BowlingGameTest.swift in Sources */,
 				64EE732121343EBB002E69FA /* LandingPageViewController.swift in Sources */,
 				64EE735221345373002E69FA /* SinglePlayerViewController.swift in Sources */,
 				64EE731F21343EBB002E69FA /* AppDelegate.swift in Sources */,
 				641BC869213C9CD7003625B3 /* MultiplayerViewController.swift in Sources */,
-				64FEF4D3213BE057000EB69D /* BowlingGameTestDelegate.swift in Sources */,
 				642B5C58213CB5A000ED0BBC /* MultiplayerHistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
